@@ -15,6 +15,12 @@
       $scope.obj = new Date;
     })
   </script>
+  <style type="text/css">
+    li {
+      list-style: none;
+      margin-bottom: 10px;
+    }
+  </style>
 </head>
 
 <body class="container">
@@ -36,37 +42,37 @@
         <h3 class="col-md-4 header">result</h3>
       </li>
       <li class="row">
-        <span class="col-md-4">moment("{{str}}").format("YYYY-MM-DD")</span>
+        <code class="col-md-4">moment("{{str}}").format("YYYY-MM-DD")</code>
         <code ng-non-bindable class="col-md-4">{{str | moment:"format":"YYYY-MM-DD"}}</code>
         <span class="col-md-4">{{str | moment:"format":"YYYY-MM-DD"}}</span>
       </li>
       <li class="row">
-        <span class="col-md-4">moment("{{str}}").day(-7)</span>
+        <code class="col-md-4">moment("{{str}}").day(-7)</code>
         <code ng-non-bindable class="col-md-4">{{str | moment:"day":-7}}</code>
         <span class="col-md-4">{{str | moment:"day":-7}}</span>
       </li>
       <li class="row">
-        <span class="col-md-4">moment(moment("{{str}}").day(-7)).format("YYYY-MM-DD")</span>
+        <code class="col-md-4">moment(moment("{{str}}").day(-7)).format("YYYY-MM-DD")</code>
         <code ng-non-bindable class="col-md-4">{{str | moment:"day":-7 | moment:"format":"YYYY-MM-DD"}}</code>
         <span class="col-md-4">{{str | moment:"day":-7 | moment:"format":"YYYY-MM-DD"}}</span>
       </li>
       <li class="row">
-        <span class="col-md-4">moment("{{str}}").second()</span>
+        <code class="col-md-4">moment("{{str}}").second()</code>
         <code ng-non-bindable class="col-md-4">{{str | moment:"second"}}</code>
         <span class="col-md-4">{{str | moment:"second"}}</span>
       </li>
       <li class="row">
-        <span class="col-md-4">moment({{multiDimArr}}).format()</span>
+        <code class="col-md-4">moment({{multiDimArr}}).format()</code>
         <code ng-non-bindable class="col-md-4">{{multiDimArr | moment:"format"}}</code>
         <span class="col-md-4">{{multiDimArr | moment:"format"}}</span>
       </li>
       <li class="row">
-        <span class="col-md-4">moment({{arr}}).format()</span>
+        <code class="col-md-4">moment("{{arr}}").format()</code>
         <code ng-non-bindable class="col-md-4">{{arr | moment:"format"}}</code>
         <span class="col-md-4">{{arr | moment:"format"}}</span>
       </li>
       <li class="row">
-        <span class="col-md-4">moment("{{str2}}").subtract(1, 'ms').quarter()</span>
+        <code class="col-md-4">moment("{{str2}}").subtract(1, 'ms').quarter()</code>
         <code ng-non-bindable class="col-md-4">{{str2 | moment:"subtract":1:'ms' | moment:"quarter"}}</code>
         <span class="col-md-4">{{str2 | moment:"subtract":1:'ms'| moment:"quarter"}}</span>
       </li>
