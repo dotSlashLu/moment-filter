@@ -25,4 +25,4 @@ return function(input, fun /*, valist: funVar */) {
   else 
     return m[fun];
 }
-})
+});
